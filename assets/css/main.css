@@ -186,7 +186,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #8cafdd url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -680,7 +680,7 @@
 		cursor: default;
 		height: 6em;
 		left: 0;
-		line-height: 8em;
+		line-height: 1em;
 		position: absolute;
 		text-align: center;
 		width: 100%;

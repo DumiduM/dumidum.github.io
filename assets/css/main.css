@@ -168,7 +168,10 @@
 		top: 0;
 		width: 100%;
 	}
-
+	.copyrighttext{
+		font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+		font-size: 36px;
+	}
 /* BG */
 
 	#bg {
@@ -186,7 +189,8 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #8cafdd url("images/bg.jpg") bottom left;
+		background: #dc8e4d url("images/bg.jpg") bottom left;
+		background: bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;

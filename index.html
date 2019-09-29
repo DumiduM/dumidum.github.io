@@ -9,6 +9,7 @@
 		<title>Dumindu</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="assets\css\images\icon.png" type="image/gif" sizes="16x16">
@@ -45,8 +46,8 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<!-- <span class="copyright">&copy; Design: <a href="http://Facebook.com/dumindumadura">Dumindu</a>.</span> -->
-						<span class="copyright"></span><img src="assets\css\images\sigiriya.png" alt="Sigiriya" width="90"></span><br>
-						<span>Last Updated : 04 Mar 2019</span><br>
+						<span class="copyright"></span><a class="copyrighttext"></a></span><br>
+						<span>Last Updated : 29 Sept 2019</span><br>
 						<!-- Start of CuterCounter Code -->
 						<span>Total visits :  <img src="http://www.cutercounter.com/hit.php?id=grodook&nd=6&style=37"></span>
 <!-- End of CuterCounter Code -->
@@ -62,3 +63,35 @@
 		</script>
 	</body>
 </html>
+
+<script>
+var backgrounds = [
+  {  image: './assets/css/images/bg.jpg',
+   color: 'dc8e4d',
+   subtitle: 'Colombo'
+  },
+  {  image: './assets/css/images/bg1.jpg',
+   color: '8cafdd',
+   subtitle: 'Sigiriya'
+  },
+  {  image: './assets/css/images/bg2.jpg',
+   color: '6cc4e6',
+   subtitle: 'Lotus Tower'
+  }
+       ]; 
+
+/**
+ * Returns a random integer between min and max
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+       $(document).ready(function(){
+         var bgNumber = getRandomInt(0, backgrounds.length-1);
+         
+		 $('#bg').css({"background": '#'+ backgrounds[bgNumber].color + ' url('+backgrounds[bgNumber].image+') '+ 'bottom left', "background-repeat": 'repeat-x'});
+         $('.copyrighttext').text(backgrounds[bgNumber].subtitle);
+       });
+</script>

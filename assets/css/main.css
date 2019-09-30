@@ -189,8 +189,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #dc8e4d url("images/bg.jpg") bottom left;
-		background: bottom left;
+		background: #dc8e4d url("./images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -264,8 +263,9 @@
 	}
 
 	#bg {
-		background-size: 2250px auto;
-		width: 6750px;
+		
+		background-size: 2250px auto !important;
+		width: 6750px !important;
 	}
 
 /* Overlay */
@@ -768,8 +768,8 @@
 		}
 
 		#bg {
-			background-size: 1500px auto;
-			width: 4500px;
+			background-size: 1500px auto !important;
+			width: 4500px !important;
 		} }
 
 /* Normal */
@@ -850,8 +850,8 @@
 		}
 
 		#bg {
-			background-size: 750px auto;
-			width: 2250px;
+			background-size: 750px auto !important;
+			width: 2250px !important;
 		} }
 
 /* Mobile */
@@ -936,8 +936,8 @@
 		}
 
 		#bg {
-			background-size: 300px auto;
-			width: 900px;
+			background-size: 300px auto !important;
+			width: 900px !important;
 		}
 
 	/* Header */
@@ -1034,8 +1034,8 @@
 		}
 
 		#bg {
-			background-size: 412.5px auto;
-			width: 1237.5px;
+			background-size: 412.5px auto !important;
+			width: 1237.5px !important;
 		}
 
 	/* Header */

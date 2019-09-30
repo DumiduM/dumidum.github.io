@@ -18,7 +18,7 @@
 	</head>
 	<body class="loading">
 		<div id="wrapper">
-			<div id="bg"></div>
+			<div id="bg" class="bbg"></div>
 			<div id="overlay"></div>
 			<div id="main">
 
@@ -95,7 +95,10 @@ function getRandomInt (min, max) {
        $(document).ready(function(){
          var bgNumber = getRandomInt(0, backgrounds.length-1);
          
-		 $('#bg').css({"background": '#'+ backgrounds[bgNumber].color + ' url('+backgrounds[bgNumber].image+') '+ 'bottom left', "background-repeat": 'repeat-x'});
+		 $('.bbg').css(
+			 {"background": '#'+ backgrounds[bgNumber].color + ' url('+backgrounds[bgNumber].image+') '+ 'bottom left',
+			  "background-repeat": 'repeat-x'
+			 });
          $('.copyrighttext').text(backgrounds[bgNumber].subtitle);
        });
 </script>

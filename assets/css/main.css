@@ -700,6 +700,14 @@
 				font-size: 13pt;
 			}
 
+			#badge1{
+				max-width: 120px !important;
+			}
+
+			#badge2{
+				max-width: 118px !important;
+			}
+
 		/* BG */
 
 			@-moz-keyframes bg {
@@ -780,6 +788,15 @@
 
 			body, input, select, textarea {
 				font-size: 12pt;
+			}
+
+			
+			#badge1{
+				max-width: 100px !important;
+			}
+
+			#badge2{
+				max-width: 98px !important;
 			}
 
 		/* BG */
@@ -866,6 +883,15 @@
 
 			body, input, select, textarea {
 				font-size: 11pt;
+			}
+
+			
+			#badge1{
+				max-width: 80px !important;
+			}
+
+			#badge2{
+				max-width: 78px !important;
 			}
 
 		/* BG */
@@ -967,6 +993,16 @@
 	@media screen and (max-width: 480px) {
 
 		/* BG */
+
+		
+		#badge1{
+			max-width: 50px !important;
+		}
+
+		#badge2{
+			max-width: 49px !important;
+		}
+
 
 			@-moz-keyframes bg {
 				0% {

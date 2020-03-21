@@ -1003,6 +1003,10 @@
 			max-width: 49px !important;
 		}
 
+		#footer{
+			height: 8.5em;
+		}
+
 
 			@-moz-keyframes bg {
 				0% {

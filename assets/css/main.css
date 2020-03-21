@@ -894,6 +894,10 @@
 				max-width: 78px !important;
 			}
 
+			#footer{
+				height: 9em !important;
+			}
+
 		/* BG */
 
 			@-moz-keyframes bg {
@@ -1004,7 +1008,7 @@
 		}
 
 		#footer{
-			height: 8.5em;
+			height: 8em !important;
 		}
 
 

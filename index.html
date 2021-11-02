@@ -38,7 +38,7 @@
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 120px;
-        opacity: 0.5;
+        opacity: 0;
         background-color: black;
         color: #fff;
         text-align: center;
@@ -49,6 +49,8 @@
         top: 110%;
         left: 50%;
         margin-left: -60px;
+        transition: 1s;
+        font-size: medium;
     }
 
     .tooltip .tooltiptext::after {
@@ -60,9 +62,14 @@
         border-width: 5px;
         border-style: solid;
         border-color: transparent transparent black transparent;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
     }
 
     .tooltip:hover .tooltiptext {
+        opacity: 0.5;
+        transition-delay: 0.5s;
         visibility: visible;
     }
 </style>
@@ -77,7 +84,7 @@
             <header id="header">
                 <h1>Dumindu De Silva</h1>
                 <b>
-                    <p>Tech Enthusiast &nbsp;&bull;&nbsp; Software Engineer &nbsp;&bull;&nbsp; UI/UX Designer
+                    <p>Tech Enthusiast &nbsp;&bull;&nbsp; Software Engineer &nbsp;&bull;&nbsp; Researcher &nbsp;&bull;&nbsp; UI/UX Designer
                         &nbsp;&bull;&nbsp; <a
                             href="https://www.linkedin.com/posts/dumindudesilva_msftstudentpartner-msftstudentambassador-activity-6699391611589292032-axjV"
                             class="icon fab fa-microsoft"><span class="label"></span></a> StudentAmbassador</p>
@@ -120,7 +127,7 @@
                         <li class="tooltip">
                             <a href="https://www.youtube.com/channel/UC7THZ_PmT0UPGBw4htHBvjQ?view_as=subscriber"
                                 target="_blank" class="icon fa-youtube-play">
-                                <span class="label">Youtube</span></a><span class="tooltiptext">La Traina YT</span>
+                                <span class="label">Youtube</span></a><span class="tooltiptext">La Traina Youtube</span>
                         </li>
                         <li class="tooltip">
                             <a href="https://www.instagram.com/la__traina" target="_blank" class="icon fa-instagram">
